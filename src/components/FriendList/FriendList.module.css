@@ -1,0 +1,6 @@
+.friends__list {
+  list-style-type: none;
+  width: 400px;
+  margin: 0 auto 50px;
+  padding: 0;
+}
