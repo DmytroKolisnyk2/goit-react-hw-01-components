@@ -17,11 +17,11 @@ const Product = props => (
     <ul className={styles.stats}>
       <li>
         <span className={styles.label}>Followers</span>
-        <span className={styles.quantity}>{props.stats.likes}</span>
+        <span className={styles.quantity}>{props.stats.followers}</span>
       </li>
       <li>
         <span className={styles.label}>Views</span>
-        <span className={styles.quantity}>{props.stats.likes}</span>
+        <span className={styles.quantity}>{props.stats.views}</span>
       </li>
       <li>
         <span className={styles.label}>Likes</span>
@@ -42,4 +42,5 @@ Product.propTypes = {
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
 };
