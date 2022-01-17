@@ -1,13 +1,16 @@
-import './App.css';
 import Profile from "./Profile/Profile";
-import user from '../data/user.json';
-import 'modern-normalize/modern-normalize.css';
-import statisticalData from '../data/statistic.json';
 import Statistics from './Statistic/Statistic';
-import friends from '../data/friends.json';
 import FriendList from './FriendList/FriendList';
-import transactions from '../data/transactions.json';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
+
+import './App.css';
+import 'modern-normalize/modern-normalize.css';
+
+import user from '../data/user.json';
+import statisticalData from '../data/statistic.json';
+import friends from '../data/friends.json';
+import transactions from '../data/transactions.json';
+
 
 function App() {
   return (

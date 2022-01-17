@@ -1,13 +1,13 @@
 import styles from './Statistic.module.css';
 import PropTypes from 'prop-types';
 
-const Statistic = props => (
+const Statistic = ({ stats, title }) => (
   <section className={styles.statistics}>
     {
-      (props.title) && (<div className={styles.title__wrapper}><h2 className={styles.title}>Upload stats</h2></div>)
+      (title) && (<div className={styles.title__wrapper}><h2 className={styles.title}>{title}</h2></div>)
     }
     <ul className={styles.stat__list}>
-      {props.stats.map((item) => (
+      {stats.map((item) => (
         <li style={{
           backgroundColor: getRandomRgb()
         }}
@@ -28,6 +28,10 @@ const getRandom = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
 
 export default Statistic;
+
+// Statistic.defaultProps = {
+//   title: 'Statistic'
+// }
 
 Statistic.propTypes = {
   title: PropTypes.string,
